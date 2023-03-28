@@ -57,5 +57,7 @@ if xbox > playstation and xbox > nintendo:
     print('O console escolhido foi o Xbox')
 elif playstation > xbox and playstation > nintendo:
     print('O console escolhido foi o Playstation')
-else:
+elif nintendo > xbox and nintendo > playstation:
     print('O console escolhido foi o Nintendo')
+else:
+    print('Houve um empate, reinicie a votação')
