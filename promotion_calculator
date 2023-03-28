@@ -1,0 +1,29 @@
+valor_passagem = float(input('Digite o valor da passagem: '))
+categoria = input('Escolha uma categoria: EC - Economica / EX - Executiva / PC - Primeira classe ')
+num_passag = int(input('Digite o número de passageiros: '))
+
+if categoria.upper() == 'EC':
+    if num_passag == 2:
+        valor_passagem = valor_passagem * 0.97
+    elif num_passag == 3:
+        valor_passagem = valor_passagem * 0.96
+    elif num_passag >= 4:
+        valor_passagem = valor_passagem * 0.95
+
+elif categoria.upper() == 'EX':
+    if num_passag == 2:
+        valor_passagem = valor_passagem * 0.95
+    elif num_passag == 3:
+        valor_passagem = valor_passagem * 0.93
+    elif num_passag >= 4:
+        valor_passagem = valor_passagem * 0.92
+
+elif categoria.upper() == 'PC':
+    if num_passag == 2:
+        valor_passagem = valor_passagem * 0.90
+    elif num_passag == 3:
+        valor_passagem = valor_passagem * 0.85
+    elif num_passag >= 4:
+        valor_passagem = valor_passagem * 0.80
+
+print('O valor a ser pago para {} passageiros na categoria {} é R$ {}'.format(num_passag, categoria, valor_passagem))
