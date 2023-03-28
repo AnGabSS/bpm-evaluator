@@ -1,0 +1,33 @@
+print('1 - Segunda / 2 - Terça / 3 - Quarta / 4 - Quinta / 5 - Sexta / 6 - Encerrar votação' )
+segunda = 0
+terca = 0
+quarta = 0
+quinta = 0
+sexta = 0
+voto = 0
+
+while voto != 6:
+    voto = int(input('Digite uma das opções: '))
+    if voto == 1:
+        segunda = segunda + 1
+    elif voto == 2:
+        terca = terca + 1
+    elif voto == 3:
+        quarta = quarta + 1
+    elif voto == 4:
+        quinta = quinta + 1
+    elif voto == 5:
+        sexta = sexta + 1
+
+if segunda > terca and segunda > quarta and segunda > quinta and segunda > sexta:
+    print('O dia vencedor é Segunda')
+elif terca > segunda and terca > quarta and terca > quinta and terca > sexta:
+    print('O dia vencedor é Terça')
+elif quarta > segunda and quarta > terca and quarta > quinta and quarta > sexta:
+    print('O dia vencedor é Quarta')
+elif quinta > segunda and quinta > terca and quinta > quarta and quinta > sexta:
+    print('O dia vencedor é quinta')
+elif sexta > segunda and sexta > terca and sexta > quarta and sexta > quinta:
+    print('O dia vencedor é Sexta')
+else:
+    print('Houve um empate, por favor reinicie a votação')
