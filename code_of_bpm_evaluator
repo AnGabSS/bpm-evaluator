@@ -1,0 +1,35 @@
+age = int(input('Digite sua idade: '))
+bpm = float(input('Digite seu BPM: '))
+
+if age<=2:
+    if bpm >= 120 and bpm <= 140:
+        print('Batimento está saudável')
+    elif bpm<120:
+        print('batimento está baixo')
+    else:
+        print('batimento está alto')
+
+elif age>=8 and idade<=17:
+    if  bpm>=80 and bpm<=100:
+        print('Batimento está saudável')
+    elif bpm<80:
+        print('Batimento está baixo')
+    else:
+        print('Batimento está alto')
+
+elif age>=18 and idade<60:
+    if bpm>=70 and bpm<=80:
+        print('Batimento está saudável')
+    elif bpm<70:
+        print('Batimento está baixo')
+    else:
+        print('Batimento está alto')
+
+elif age>=60:
+    if bpm>=50 and bpm<=60:
+        print('Batimento está saudável')
+    elif bpm<50:
+        print('Batimento está baixo')
+    else:
+        print('Batimento está alto')
+
