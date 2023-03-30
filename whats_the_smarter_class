@@ -12,8 +12,8 @@ for par in range(2, numero_total + 1, 2):
         'VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES. '
         'POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO {}: '.format(par))))
 
-media_impar = sum(total_impar) / 2
-media_par = sum(total_par) / 2
+media_impar = sum(total_impar) / len(total_impar)
+media_par = sum(total_par) / len(total_par)
 
 if media_impar > media_par:
     print('A turma impar possui a nota média maior que a par')
