@@ -1,18 +1,16 @@
-numero_total = 50
+numero_total = 10
 total_impar = []
 total_par = []
 
 for impar in range(1, numero_total + 1, 2):
-    nota_impar = float(input(
+    total_impar.append(float(input(
         'VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS IMPARES. '
-        'POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO {}: '.format(impar)))
-    total_impar.append(nota_impar)
+        'POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO {}: '.format(impar))))
 
 for par in range(2, numero_total + 1, 2):
-    nota_par = float(input(
+    total_par.append(float(input(
         'VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES. '
-        'POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO {}: '.format(par)))
-    total_par.append(nota_par)
+        'POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO {}: '.format(par))))
 
 media_impar = sum(total_impar) / 2
 media_par = sum(total_par) / 2
